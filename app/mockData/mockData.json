@@ -1,0 +1,107 @@
+{
+   "taskViews":[
+      {
+         "key":"alltasks",
+         "title":"All Tasks"
+      },
+      {
+         "key":"favorite",
+         "title":"Starred"
+      },
+      {
+         "key":"offline",
+         "title":"Available Offline"
+      },
+      {
+         "key":"overdue",
+         "title":"Overdue"
+      }
+   ],
+   "tasks":[
+      {
+         "id":2169063,
+         "displayName":"Default ",
+         "priority":{
+            "id":1,
+            "name":"Normal"
+         },
+         "deadline":null,
+         "assignedTime":"2019-10-24T15:39:34.720Z",
+         "assignees":[
+            {
+               "id":"nina.liu.d",
+               "displayName":"Nina Liu Designer",
+               "isUser":true
+            }
+         ],
+         "favorite":false,
+         "overdue":false,
+         "legacyForm":false,
+         "autoDownloadable":true,
+         "acceptLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2169063/accept",
+         "formUiLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2169063/form",
+         "attributesLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2169063/attributes",
+         "statusLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2169063/status"
+      },
+      {
+         "id":2168942,
+         "displayName":"Multiple Group Assigned",
+         "priority":{
+            "id":1,
+            "name":"Normal"
+         },
+         "deadline":null,
+         "assignedTime":"2019-10-24T14:55:19.950Z",
+         "assignees":[
+            {
+               "id":"6",
+               "displayName":"Designers",
+               "isUser":false
+            },
+            {
+               "id":"31",
+               "displayName":"[Group Name Not Available]",
+               "isUser":false
+            },
+            {
+               "id":"3",
+               "displayName":"[Group Name Not Available]",
+               "isUser":false
+            }
+         ],
+         "favorite":false,
+         "overdue":false,
+         "legacyForm":false,
+         "autoDownloadable":false,
+         "acceptLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168942/accept",
+         "formUiLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168942/form",
+         "attributesLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168942/attributes",
+         "statusLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168942/status"
+      },
+      {
+         "id":2168940,
+         "displayName":"Single Group Assigned",
+         "priority":{
+            "id":1,
+            "name":"Normal"
+         },
+         "deadline":null,
+         "assignedTime":"2019-10-24T14:55:19.950Z",
+         "assignees":[
+            {
+               "id":"6",
+               "displayName":"Designers",
+               "isUser":false
+            }
+         ],
+         "favorite":false,
+         "overdue":false,
+         "legacyForm":false,
+         "autoDownloadable":false,
+         "acceptLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168940/accept",
+         "formUiLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168940/form",
+         "attributesLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168940/attributes",
+         "statusLink":"https://mobile-daily.appianci.net/suite/rest/a/task/latest/2168940/status"
+      }
+   ]
+}
