@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
-import { tasks } from "../mockData/mockTask";
-
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import moment from 'moment';
 class TaskItem extends Component {
     render() {
         const task = this.props.task;
         const single = task.assignees.length == 1 && task.assignees[0].isUser;
         const assignees = task.assignees.map((assignee) => assignee.displayName).join(", ");
+        const receivedTime = moment(task.assignedTime).fromNow();
         console.log(assignees);
         return (
             <View style={styles.taskContainer} >
@@ -21,13 +22,13 @@ class TaskItem extends Component {
                     <Text style={{ fontSize: 14, fontWeight: 'bold' }}>{task.displayName}</Text>
                     <View style={styles.assigneesContainer}
                     >
-                        <Text  numberOfLines={1} ellipsizeMode='tail' style={{ fontSize: 11 }}>{assignees}</Text>
+                        <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontSize: 13 }}>{assignees}</Text>
                     </View>
                 </View>
 
                 <View style={styles.starDateContainer}>
-                    <Image></Image>
-                    <Text>fesfewf</Text>
+                    <Icon name="star-border" size={30} color="grey" />
+                    <Text style={{ fontSize: 10 }}>{receivedTime}</Text>
                 </View>
 
             </View>
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderRadius: 0.5,
         borderTopColor: "#e0e0eb",
-        borderTopWidth: 1,
+        borderBottomWidth: 0.25,
         justifyContent: "space-around",
         padding: 10,
         flex: 1
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     assigneesContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
+        marginTop: 5
     }
 })
 export default TaskItem
