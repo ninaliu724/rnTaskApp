@@ -1,4 +1,4 @@
-{
+export const data = {
    "taskViews":[
       {
          "key":"alltasks",
