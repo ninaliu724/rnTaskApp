@@ -22,12 +22,13 @@ class TaskItem extends Component {
                     <Text style={{ fontSize: 14, fontWeight: 'bold' }}>{task.displayName}</Text>
                     <View style={styles.assigneesContainer}
                     >
+                        <Icon name="arrow-forward" size={15}/>
                         <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontSize: 13 }}>{assignees}</Text>
                     </View>
                 </View>
 
                 <View style={styles.starDateContainer}>
-                    <Icon name="star-border" size={30} color="grey" />
+                    <Icon name="star-border" size={27} color="grey" />
                     <Text style={{ fontSize: 10 }}>{receivedTime}</Text>
                 </View>
 
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderRadius: 0.5,
         borderTopColor: "#e0e0eb",
-        borderBottomWidth: 0.25,
+        borderWidth: 0.25,
         justifyContent: "space-around",
         padding: 10,
         flex: 1
@@ -56,11 +57,12 @@ const styles = StyleSheet.create({
         flex: 4
     },
     starDateContainer: {
-        flex: 1
+        marginTop: 15,
+        flex: 1,
+        alignItems: "flex-end"
     },
     assigneesContainer: {
         flexDirection: "row",
-        justifyContent: "space-between",
         marginTop: 5
     }
 })

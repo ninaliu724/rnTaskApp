@@ -36,6 +36,10 @@ target 'app' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
   target 'appTests' do
     inherit! :search_paths
     # Pods for testing
