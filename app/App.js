@@ -11,11 +11,11 @@ import {
   StyleSheet,
   View,
   Text,
-  FlatList
+  FlatList,
+  Image
 } from 'react-native';
 import TaskItem from './components/TaskItem';
 import { getTasks } from './services/TaskService';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import ProgressCircle from 'react-native-progress-circle';
 
 class App extends Component {
@@ -53,10 +53,10 @@ class App extends Component {
       <View style={styles.appContainer}>
         <View style={styles.filterContainer}>
           <View style={{ flexDirection: "row" }}>
-            <Icon name="view-carousel" size={25} coloe="grey" style={{ marginLeft: 10, marginRight: 10 }} />
+            <Image source={require('./images/view_carousel.png')} style={{ marginLeft: 10, marginRight: 10 }}></Image>
             <Text style={{ fontSize: 15, fontWeight: 'bold' }}>All Tasks</Text>
           </View>
-          <Icon name="keyboard-arrow-down" size={20} style={{ marginRight: 10 }} />
+          <Image source={require('./images/arrow_down.png')} style={{ marginRight: 10 }}></Image>
         </View>
         <View style={styles.tasksContainer}>
           <FlatList data={this.state.data.tasks} renderItem={({ item }) => <TaskItem task={item} />} />

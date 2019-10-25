@@ -22,13 +22,13 @@ class TaskItem extends Component {
                     <Text style={{ fontSize: 14, fontWeight: 'bold' }}>{task.displayName}</Text>
                     <View style={styles.assigneesContainer}
                     >
-                        <Icon name="arrow-forward" size={15}/>
+                        <Image source={require('../images/arrow_forward.png')} style={{ width: 15, height: 15 }}></Image>
                         <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontSize: 13 }}>{assignees}</Text>
                     </View>
                 </View>
 
                 <View style={styles.starDateContainer}>
-                    <Icon name="star-border" size={27} color="grey" />
+                    <Image source={require('../images/star_border.png')} color="grey" style={{ width: 25, height: 25 }}></Image>
                     <Text style={{ fontSize: 10 }}>{receivedTime}</Text>
                 </View>
 
